@@ -1,0 +1,52 @@
+{
+  "name": "product-studio",
+  "version": "1.0.0",
+  "description": "Desktop Product Manager for TypeScript",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder --win --x64",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "product",
+    "manager",
+    "typescript",
+    "crud"
+  ],
+  "author": "Product Studio",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.productstudio.app",
+    "productName": "Product Studio",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "app.js",
+      "icon.ico",
+      "products.ts"
+    ]
+  }
+}

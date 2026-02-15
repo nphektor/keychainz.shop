@@ -1,0 +1,7 @@
+Note: To add a custom icon, replace this file with a .ico file.
+For now, Electron will use its default icon.
+
+To create an icon:
+1. Create or find a 256x256 PNG image
+2. Use an online converter (e.g., https://convertio.co/png-ico/)
+3. Save as icon.ico in this folder
