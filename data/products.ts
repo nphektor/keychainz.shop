@@ -1,12 +1,13 @@
+
 import type { Product } from '../types';
 
 export const PRODUCTS: Product[] = [
   {
     "id": 1,
-    "name": "PoundTown",
+    "name": "Pound Town",
     "price": 4,
     "category": "funny",
     "description": "A one way ticket to Pound Town keychain.",
-    "imageUrl": "poundtown.png"
+    "imageUrl": "data/pound-town.png"
   }
 ];
