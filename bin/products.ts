@@ -7,6 +7,6 @@ export const PRODUCTS: Product[] = [
     "price": 4,
     "category": "funny",
     "description": "A one way ticket to Pound Town keychain.",
-    "imageUrl": "poundtown.png"
+    "imageUrl": "pound-town.png"
   }
 ];
